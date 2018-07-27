@@ -17,7 +17,7 @@ eureka:
 
 
 instance:
-  name: instance-123-mudar
+  name: instance-xpto-0909238
 
 
 #logging:
