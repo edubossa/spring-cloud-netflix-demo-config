@@ -17,7 +17,7 @@ eureka:
 
 
 instance:
-  name: instance-wallace-89823723-213618276387123
+  name: instance-7656
 
 
 #logging:
