@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: router-zuul
+  cloud:
+    config:
+      uri: http://${SPRING_CONFIG_URI:localhost:8888}
+
+server:
+  port: 9999
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${SPRING_EUREKA_SERVER:localhost:8761}/eureka/
+
+
+zuul:
+  prefix: /api
+  routes:
+    account-ms:
+      path: /accounts/**
+      serviceId: account-ms
+      stripPrefix: false
+    feing-demo:
+      path: /feign/**
+      serviceId: feign-demo
+      stripPrefix: false
+#    notifications:
+#      path: /notifications/**
+#      serviceId: api-notification
+#      stripPrefix: false
+#    catalogs:
+#      path: /catalogs/**
+#      serviceId: api-store
+#      stripPrefix: false
