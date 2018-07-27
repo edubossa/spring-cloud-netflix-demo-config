@@ -17,7 +17,7 @@ eureka:
 
 
 instance:
-  name: instance-2343
+  name: instance-ews-9999923892378
 
 
 #logging:
