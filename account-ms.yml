@@ -17,7 +17,7 @@ eureka:
 
 
 instance:
-  name: instance-ews-9999923892378
+  name: instance-123-mudar
 
 
 #logging:
