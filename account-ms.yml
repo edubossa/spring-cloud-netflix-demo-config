@@ -17,7 +17,7 @@ eureka:
 
 
 instance:
-  name: instance-87676-olk-66254541
+  name: instance-9876
 
 
 #logging:
